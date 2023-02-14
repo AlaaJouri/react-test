@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greetings from "./Greetings";
 
 function App() {
   const name:string="Alaa";
@@ -20,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <Greetings name={name}/>
       </header>
     </div>
   );
