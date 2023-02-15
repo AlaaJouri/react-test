@@ -2,8 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greetings from "./Greetings";
-
-
 import './App.css';
 import Gallery from "./Gallery";
 
@@ -11,8 +9,6 @@ import Gallery from "./Gallery";
 
 function App() {
     const characters = require('./characters.json');
-
-
 
   //const name:string="Alaa";
  // const names:string[]=["Alaa","Jouri","Sara"]
@@ -36,9 +32,6 @@ function App() {
         >
           Learn React
         </a>
-
-
-
       </header>
     </div>
   );

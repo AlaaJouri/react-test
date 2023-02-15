@@ -1,0 +1,9 @@
+.gallery{
+    flex: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    border: 1px solid ;
+    background-color: crimson;
+
+}
