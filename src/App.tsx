@@ -5,12 +5,17 @@ import Greetings from "./Greetings";
 import './App.css';
 import Gallery from "./Gallery";
 import Counter from "./Counter"
+import InputUser from "./InputUser";
 
 
 
 function App() {
     const characters = require('./characters.json');
-
+    const [text,setText]= useState<string>("");
+function handleText(text:string)
+{
+    setText(text)
+}
 
     const [count, setCount] = useState<number>(0);
 
@@ -36,6 +41,13 @@ function increase()
               <Gallery characters={characters} />
               <button onClick={increase}>Klick</button>
               <Counter/>
+              <p>
+                  <InputUser setText={handleText}/>
+              </p>
+              <p>
+                  {text}
+              </p>
+
 
           </div>
 
