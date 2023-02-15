@@ -1,5 +1,5 @@
 import CharacterCard from "./CharacterCard";
-import "./Stylesheet-Gallery.css"
+import './Stylesheet-Gallery.css'
 
 export type Character = {
     id: number,

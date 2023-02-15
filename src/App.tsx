@@ -1,14 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greetings from "./Greetings";
 import './App.css';
 import Gallery from "./Gallery";
+import Counter from "./Counter"
 
 
 
 function App() {
     const characters = require('./characters.json');
+
+
+    const [count, setCount] = useState<number>(0);
+
+
+
+function increase()
+    {
+        setCount(count + 1)
+
+    }
 
   //const name:string="Alaa";
  // const names:string[]=["Alaa","Jouri","Sara"]
@@ -22,6 +34,9 @@ function App() {
           <div className="App">
               <h1>The Rick and Morty Characters Gallery</h1>
               <Gallery characters={characters} />
+              <button onClick={increase}>Klick</button>
+              <Counter/>
+
           </div>
 
         <a
