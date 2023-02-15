@@ -11,15 +11,14 @@ import InputUser from "./InputUser";
 
 function App() {
     const characters = require('./characters.json');
+    //Input
     const [text,setText]= useState<string>("");
 function handleText(text:string)
 {
     setText(text)
 }
-
+//Counter
     const [count, setCount] = useState<number>(0);
-
-
 
 function increase()
     {
