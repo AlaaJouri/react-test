@@ -3,8 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 import Greetings from "./Greetings";
 
+
+import './App.css';
+import Gallery from "./Gallery";
+
+
+
 function App() {
-  const name:string="Alaa";
+    const characters = require('./characters.json');
+
+
+
+  //const name:string="Alaa";
+ // const names:string[]=["Alaa","Jouri","Sara"]
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +23,11 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <h3>Hallo {name}</h3>
+          <div className="App">
+              <h1>The Rick and Morty Characters Gallery</h1>
+              <Gallery characters={characters} />
+          </div>
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,7 +36,9 @@ function App() {
         >
           Learn React
         </a>
-        <Greetings name={name}/>
+
+
+
       </header>
     </div>
   );
